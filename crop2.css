@@ -467,3 +467,134 @@ body {
     color: white;
     font-size: 0.95em;
 }
+
+/* -------------------------------------
+   Responsive Styles for Devices
+---------------------------------------- */
+
+/* Tablets and below (≤ 1024px) */
+@media (max-width: 1024px) {
+  .header-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .crop-box {
+    padding: 20px;
+  }
+
+  .medicine-image {
+    height: 250px;
+  }
+
+  .medicine-box {
+    flex: 1 1 48%;
+  }
+
+  .disease-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .disease-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .disease-info {
+    text-align: center;
+  }
+}
+
+/* Mobile Devices (≤ 768px) */
+@media (max-width: 768px) {
+  .page-container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .info-container {
+    padding: 20px 10px;
+  }
+
+  .crop-box {
+    height: auto;
+    padding: 20px 15px;
+  }
+
+  .crop-box h4 {
+    font-size: 1.1rem;
+  }
+
+  .crop-box p {
+    font-size: 0.9rem;
+  }
+
+  .medicine-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .medicine-image {
+    height: 200px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .disease-flex {
+    flex-direction: column;
+  }
+}
+
+/* Small Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .header-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .info h3,
+  h3 {
+    font-size: 1.2rem;
+    padding-left: 10px;
+  }
+
+  .crop-box h4 {
+    font-size: 1rem;
+  }
+
+  .crop-box p {
+    font-size: 0.85rem;
+  }
+
+  .crop-image,
+  .medicine-image {
+    height: 150px;
+  }
+
+  .medicine-box h4 {
+    font-size: 1rem;
+  }
+
+  .footer-container {
+    font-size: 0.85rem;
+    padding: 15px;
+  }
+
+  .disease-box {
+    padding: 15px 10px;
+  }
+
+  .disease-info p {
+    font-size: 0.9rem;
+  }
+}
