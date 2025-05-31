@@ -329,6 +329,130 @@ h3 {
   }
 }
 
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-background {
+    background-color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.header-container h1 {
+    font-size: 2rem;
+}
+
+.info-container {
+    flex: 1;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.info h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Grid for crop boxes */
+.crops-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.crop-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.crop-box:hover {
+    transform: translateY(-5px);
+}
+
+.crop-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.crop-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.crop-box p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Footer */
+.footer-background {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer-container p {
+    font-size: 0.9rem;
+}
+
+/* Responsive text scaling */
+@media (max-width: 768px) {
+    .header-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .info h3 {
+        font-size: 1.4rem;
+    }
+
+    .crop-box p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .crop-box h3 {
+        font-size: 1rem;
+    }
+
+    .crop-box p {
+        font-size: 0.85rem;
+    }
+
+    .crop-image {
+        height: 140px;
+    }
+}
+
 
 /* ---------------- Footer ---------------- */
 .footer-background {
