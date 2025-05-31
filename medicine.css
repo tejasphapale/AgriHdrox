@@ -1,0 +1,120 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4fbf5;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Main container */
+.page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.header-background {
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  padding: 20px 10px;
+  text-align: center;
+  color: white;
+  border-radius: 8px 8px 0 0;
+}
+
+.header-container h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Medicine content */
+.medicine-details {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: -1px;
+}
+
+/* Section layout */
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  border-left: 4px solid #81c784;
+  color: #2e7d32;
+}
+
+.section p {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.section ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #444;
+}
+
+.section ul li {
+  margin-bottom: 8px;
+}
+
+/* Bilingual list distinction */
+.section ul li strong {
+  display: inline-block;
+  width: 80px;
+}
+
+/* Footer */
+.footer-background {
+  background-color: #2e7d32;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.95rem;
+  border-top: 3px solid #1b5e20;
+  border-radius: 0 0 8px 8px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .section h2 {
+    font-size: 1.2rem;
+  }
+
+  .page-container {
+    padding: 10px;
+  }
+
+  .medicine-details {
+    padding: 20px 15px;
+  }
+}
