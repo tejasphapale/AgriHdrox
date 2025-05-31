@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 16px; /* base font */
+  font-size: 16px; /* Base font for scaling */
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 .page-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1rem;
   width: 100%;
 }
 
@@ -110,9 +110,7 @@ body {
   padding: 0 1rem;
 }
 
-/* Responsive adjustments */
-
-/* Tablets (≤ 768px) */
+/* Responsive: Tablets */
 @media (max-width: 768px) {
   html {
     font-size: 15px;
@@ -135,13 +133,17 @@ body {
   }
 
   .section ul li strong {
-    width: auto;
     display: block;
+    width: auto;
     margin-bottom: 0.25rem;
+  }
+
+  .page-container {
+    padding: 1.5rem 1rem;
   }
 }
 
-/* Mobile phones (≤ 480px) */
+/* Responsive: Phones */
 @media (max-width: 480px) {
   html {
     font-size: 14px;
@@ -164,12 +166,16 @@ body {
     padding: 0.75rem 0;
   }
 
+  .medicine-details {
+    padding: 1.25rem;
+  }
+
   .page-container {
     padding: 1rem;
   }
 }
 
-/* Large screens (≥ 1200px) */
+/* Optional: Larger Screens */
 @media (min-width: 1200px) {
   html {
     font-size: 17px;
