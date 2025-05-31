@@ -1,0 +1,134 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f6fff7;
+  color: #333;
+}
+
+/* About Section */
+.about-section {
+  background-color: #e9fbe9;
+  padding: 60px 20px;
+  border-top: 5px solid #66bb6a;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 2.8rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #81c784;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+/* About Boxes */
+.about-topics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-box {
+  background: #ffffff;
+  border: 1px solid #c8e6c9;
+  border-radius: 12px;
+  padding: 25px 30px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.about-box h3 {
+  font-size: 1.4rem;
+  color: #1b5e20;
+  margin-bottom: 12px;
+}
+
+.about-box p, .about-box ul {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.about-box ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.about-box ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.about-box ul li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  color: #388e3c;
+  font-size: 1rem;
+}
+
+/* Footer Styling */
+.footer-background {
+  background-color: #2e7d32;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 50px;
+}
+
+.footer-container p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-topics {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-box {
+    max-width: 90%;
+  }
+
+  .about-container h2 {
+    font-size: 2rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,156 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5fdf5;
+  color: #333;
+  line-height: 1.6;
+}
+.header-wrapper {
+  background-color: #6ecd76; /* Light green background */
+  padding: 40px 0px;
+  max-width: 1000px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header title with bold font, underline, and accent color */
+.header-title h1 {
+  font-size: 2.2rem;
+  color: #215c24; /* Dark green */
+  font-weight: 900;
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 4px solid #66bb6a; /* bright underline */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Header subtitle with italic style and softer tone */
+.header-subtitle p {
+  margin-top: 18px;
+  font-size: 1.2rem;
+  color: #124514;
+  font-style: italic;
+  font-weight: 500;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .header-title h1 {
+    font-size: 2rem;
+    border-bottom-width: 3px;
+  }
+
+  .header-subtitle p {
+    font-size: 1rem;
+  }
+}
+
+/* Main content container */
+.food-content {
+  background: #c5ecca; /* Very light green background */
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+
+/* Article / card style */
+.food-box {
+  background: #d1fdd1;           /* Light green background */
+  border: 1px solid #c8e6c9;    /* Light green border */
+  border-radius: 15px;           /* Rounded corners */
+  padding: 25px 30px;            /* Inner spacing */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);  /* Soft shadow */
+  max-width: 1000px;    
+  margin-bottom: 20px;        /* Max width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover smooth effect */
+}
+
+.food-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.food-box h3 {
+  color: #1b5e20;
+  margin-bottom: 15px;
+}
+
+.food-box h4 {
+  color: #388e3c;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.food-box ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.food-box ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.food-box ul li::before {
+  content: '✅';
+  position: absolute;
+  left: -25px;
+  color: #43a047;
+  font-size: 1rem;
+  top: 2px;
+}
+
+/* Footer Styling */
+.footer-background {
+  background-color: #2e7d32;
+  color: #fff;
+  text-align: center;
+  max-width: 1000px;
+  padding: 20px 10px;
+  margin: 40px auto;
+}
+
+.footer-container p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .food-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+  }
+
+  .header-title h1 {
+    font-size: 2rem;
+  }
+
+  .header-subtitle p {
+    font-size: 1rem;
+  }
+
+  .food-box {
+    max-width: 90%;
+  }
+}

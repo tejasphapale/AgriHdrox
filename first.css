@@ -1,0 +1,219 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0fdf4;
+    color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+}
+
+.page-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* ------------------ Header Section ------------------ */
+.header-background {
+    background-color: #2e7d32; /* dark green */
+}
+
+.header-container {
+    text-align: center;
+    padding: 30px 20px;
+    color: white;
+}
+
+/* ------------------ Navigation Bar ------------------ */
+.nav-container {
+    background-color: #1b5e20; /* even darker green */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------ Hero Section ------------------ */
+.hero-container {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 15px;
+    color: #2e7d32;
+}
+
+.hero p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* ------------------ Info Section ------------------ */
+.info-container {
+    background-color: #e9fce9;
+    padding: 30px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.info ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.info ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.social-profiles {
+    position: fixed;
+    bottom: 20px;          /* distance from bottom */
+    left: 50%;             /* start at center horizontally */
+    transform: translateX(-50%);  /* center by shifting left 50% of its own width */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    box-shadow: 0 6px 15px rgba(46, 125, 50, 0.4);
+    z-index: 1000;
+    backdrop-filter: blur(8px); /* adds blur behind container for modern effect */
+}
+
+.social-profiles a img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(70%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    display: block;
+}
+
+.social-profiles a:hover img {
+    filter: none;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+.agriculture-power {
+  background-color: #f1f8e9;
+  padding: 50px 20px;
+  margin-top: 50px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+.agri-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.agri-box {
+  background: #ffffff;
+  border: 1px solid #c8e6c9;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.agri-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.agri-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.agri-box h3 {
+  font-size: 1.4rem;
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+.agri-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* ------------------ Footer Section ------------------ */
+.footer-background {
+    background-color: #2e7d32;
+    margin-top: 30px;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 0.95em;
+}
