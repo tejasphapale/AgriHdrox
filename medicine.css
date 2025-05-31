@@ -17,6 +17,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+  width: 100%;
 }
 
 /* Header styles */
@@ -31,6 +32,7 @@ body {
 .header-container h1 {
   font-size: 2rem;
   margin-bottom: 8px;
+  word-wrap: break-word;
 }
 
 .subtitle {
@@ -60,16 +62,19 @@ body {
   color: #2e7d32;
 }
 
+.section p,
+.section ul {
+  color: #444;
+}
+
 .section p {
   margin-bottom: 10px;
-  color: #444;
 }
 
 .section ul {
   margin-top: 10px;
   padding-left: 20px;
   list-style-type: disc;
-  color: #444;
 }
 
 .section ul li {
@@ -79,7 +84,8 @@ body {
 /* Bilingual list distinction */
 .section ul li strong {
   display: inline-block;
-  width: 80px;
+  min-width: 80px;
+  font-weight: 600;
 }
 
 /* Footer */
@@ -106,6 +112,10 @@ body {
     font-size: 1.6rem;
   }
 
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
   .section h2 {
     font-size: 1.2rem;
   }
@@ -116,5 +126,30 @@ body {
 
   .medicine-details {
     padding: 20px 15px;
+  }
+
+  .section ul li strong {
+    width: auto;
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .section h2 {
+    font-size: 1rem;
+  }
+
+  .footer-background {
+    font-size: 0.85rem;
+    padding: 12px 0;
   }
 }
